@@ -4,7 +4,7 @@ import * as motion from 'motion/react-client';
 import { useScroll } from 'motion/react';
 // import {motion, useScroll} from 'framer-motion'
 
-function ScrollEffect({childVariants}: {
+function ScrollEffect({ childVariants }: {
     childVariants: {
         hidden: { opacity: number, scale: number },
         visible: { opacity: number, scale: number },
@@ -12,9 +12,9 @@ function ScrollEffect({childVariants}: {
 }) {
 
     // const ref = useRef(null);
-    const {scrollYProgress: done} = useScroll()
+    const { scrollYProgress: done } = useScroll()
     console.log(done);
-    
+
     // const scaleY = useSpring(scrollYProgress)
 
     return (
@@ -29,7 +29,7 @@ function ScrollEffect({childVariants}: {
                     className='w-full bg-slate-200 rounded-lg h-full origin-bottom'
                     // ref={ref}
                     // style={{scaleY: "20%"}}
-                    style={{scaleY: done.get()}}
+                    style={{ scaleY: done.get() }}
                 ></motion.div>
             </motion.div>
         </motion.div>
