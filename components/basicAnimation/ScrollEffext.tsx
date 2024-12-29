@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React from 'react'
 import * as motion from 'motion/react-client';
 import { useScroll } from 'motion/react';
 // import {motion, useScroll} from 'framer-motion'
@@ -29,7 +29,7 @@ function ScrollEffect({childVariants}: {
                     className='w-full bg-slate-200 rounded-lg h-full origin-bottom'
                     // ref={ref}
                     // style={{scaleY: "20%"}}
-                    style={{scaleY: done}}
+                    style={{scaleY: done.get()}}
                 ></motion.div>
             </motion.div>
         </motion.div>
