@@ -37,7 +37,7 @@ import UpDownAnimation from '@/components/basicAnimation/UpDownAnimation';
 import TransformAnimation from '@/components/basicAnimation/TransformAnimation';
 import ClickingAndHoveringAnimation from '@/components/basicAnimation/ClickingAndHoveringAnimation';
 import DragObject from '@/components/basicAnimation/DragObject';
-import ScrollEffect from '@/components/basicAnimation/ScrollEffext';
+// import ScrollEffect from '@/components/basicAnimation/ScrollEffext';
 
 function BasicAnimation() {
     const parentVariants = {
